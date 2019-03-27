@@ -1,0 +1,18 @@
+<app-main-nav title="Dashboard">
+  <div class="container">
+
+    <div class="intro">
+      <mat-card>
+        Hi, welcome to the CHOICE Archive.  Use the navigation on the left or the search below to find general policy information.
+      </mat-card>
+    </div>
+
+    <div class="search">
+      <mat-form-field class='full-width'>
+        <input type="text" class="search" matInput [(ngModel)]="searchTerm" placeholder="Search by policy, name or date...">
+      </mat-form-field>
+      <button class="btn-search" mat-raised-button (click)='search()'> Search </button>
+    </div>
+
+  </div>
+</app-main-nav>

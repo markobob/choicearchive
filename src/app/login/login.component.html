@@ -1,0 +1,14 @@
+<div class="container">
+  <div class="login">
+    <h1>CHOICE Archive</h1>
+      <mat-form-field class="example-full-width">
+        <input matInput placeholder='username' [(ngModel)]='username'>
+      </mat-form-field>
+      <br>
+      <mat-form-field class="example-full-width">
+        <input type='password' matInput placeholder='password' [(ngModel)]='password'>
+      </mat-form-field>
+      <br> <br>
+    <button mat-raised-button (click)="login()">Submit</button>
+  </div>
+</div>

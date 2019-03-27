@@ -1,0 +1,30 @@
+<app-main-nav title="Policy Information"> 
+  <div class="container">
+    <mat-card>
+      <div class="details">
+        <h3>Customer</h3>
+        <div class="detail"> <span class='name'>Name: </span> <span class='value'>{{policy.customerName}}</span> </div>
+        <div class="detail"> <span class='name'>Job: </span> <span class='value'>{{policy.job}}</span> </div>
+        <h3>Policy</h3>
+        <div class="detail"> <span class='name'>Ref: </span> <span class='value'>{{policy.policyNumber}}</span> </div>
+        <div class="detail"> <span class='name'>Start: </span> <span class='value'>{{policy.startDate | date}}</span> </div>
+        <div class="detail"> <span class='name'>End: </span> <span class='value'>{{policy.endDate | date}}</span> </div>
+        <h3>Contact</h3>
+        <div class="detail"> <span class='name'>Phone: </span> <span class='value'>{{policy.phone}}</span> </div>
+        <div class="detail"> <span class='name'>Street: </span> <span class='value'>{{policy.address.stree}}</span> </div>
+        <div class="detail"> <span class='name'>County: </span> <span class='value'>{{policy.address.county}}</span> </div>
+        <div class="detail"> <span class='name'>Postcode: </span> <span class='value'>{{policy.address.zipCode}}</span> </div>
+        <h3>Vehicle</h3>
+        <div class="detail"> <span class='name'>Color: </span> <span class='value'>{{policy.car.color}}</span> </div>
+        <div class="detail"> <span class='name'>Product: </span> <span class='value'>{{policy.car.make}}</span> </div>
+        <div class="detail"> <span class='name'>Value: </span> <span class='value'>{{policy.car.value}}</span> </div>
+      </div>
+      </mat-card>
+      
+      <mat-card class='history'> 
+        <h3>History</h3>
+        <app-history-table></app-history-table>
+      </mat-card>
+
+  </div>
+</app-main-nav>

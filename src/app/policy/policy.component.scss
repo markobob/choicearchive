@@ -1,0 +1,25 @@
+.container {
+    margin: 20px auto;
+    max-width: 720px;
+}
+
+mat-card{
+    margin: 5px;
+}
+
+h3{
+    color: #0095F4;
+}
+
+.name{
+    font-weight: 500;
+}
+
+.detail{
+    margin: 0px 20px;
+}
+
+.history{
+    margin: 0 calc(-50vw + 120px + 50%);
+    width: calc(100vw - 280px);
+}

@@ -1,0 +1,36 @@
+:host{
+    height: 100%;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(90deg,#d6ffd5 0,#fdffda);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login{
+    margin: 0px auto;
+    width: 300px;
+    text-align: center;
+    background: #fff;
+    position: absolute;
+    top: 25vh;
+    box-shadow: 0 1px 10px rgba(0,0,0,.1);
+    border-radius: 5px;
+    padding: 40px;
+
+    h1{
+        font-weight: 300;
+    }
+
+    button{
+        background: #0095f4;
+        color: #fff;
+    }
+    .register{
+        font-size: .8rem;
+    }
+}

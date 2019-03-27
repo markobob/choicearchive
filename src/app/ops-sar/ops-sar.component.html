@@ -1,0 +1,16 @@
+<app-main-nav title="Subject Access Request"> 
+  <div class="container">
+      <div class="intro">
+          <mat-card>
+            Hi, welcome to the CHOICE Archive SAR viewer.  This will use custom data in a custom view to display data.  Search below.
+          </mat-card>
+        </div>
+    
+        <div class="search">
+          <mat-form-field class='full-width'>
+            <input type="text" class="search" matInput [(ngModel)]="searchTerm" placeholder="Search by policy, name or date...">
+          </mat-form-field>
+          <button class="btn-search" mat-raised-button (click)='search()'> Search </button>
+        </div>
+  </div>
+</app-main-nav>

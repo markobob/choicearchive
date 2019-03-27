@@ -1,0 +1,13 @@
+<app-main-nav title="Search Results">
+    <div class="container">
+      <div class="search-term"> {{searchTerm}} </div>
+      <div class="results">
+        <div class="result" *ngFor="let r of results;" (click)="show(r)">
+          <div class="cust-name"> <span>Customer Name: </span> {{r.customerName}} </div>
+          <div class="pol-number"> <span>Policy: </span> {{r.policyNumber}} </div>
+          <div class="start-date"> <span>Start Date: </span> {{r.startDate | date}} </div>
+          <div class="end-date"> <span>End Date: </span> {{r.endDate | date}} </div>
+        </div>
+      </div>
+    </div>
+  </app-main-nav>
